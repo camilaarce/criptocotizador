@@ -15,14 +15,17 @@
       </div>
     </div>
   </div>
+
+  <reload-prompt />
 </template>
 
 <script>
 import Formulario from "./components/Formulario.vue";
 import Data from "./components/Data.vue";
 import Grid from "./components/Grid.vue";
+import ReloadPrompt from "./components/ReloadPrompt.vue";
 export default {
-  components: { Formulario, Data, Grid },
+  components: { Formulario, Data, Grid, ReloadPrompt },
   data: () => ({
     info: {
       cripto: "",
@@ -42,7 +45,6 @@ export default {
 
       const dataCripto = RAW[cripto];
       const data = dataCripto[moneda];
-      console.log(data);
       this.info.cripto = cripto;
       this.info.moneda = moneda;
       this.info.img = data.IMAGEURL;
