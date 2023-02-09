@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  background-color: #333;
+  color: snow;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.container {
+  padding: 50px;
+  border: solid 3px #910ca9;
+  border-radius: 5px;
+  background-color: #212121;
+}
+
+@media screen and (max-width: 2560px) {
+  .container {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    margin: 0px;
+  }
+}
+.grid {
+  display: flex;
+}
+
+.formulario {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+select {
+  display: block;
+  width: 300px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  margin: 10px 0px 30px 0px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: snow;
+  font-weight: bold;
+  background-color: #910ca9;
+  border: none;
+  transition: background 0.3s;
+}
+button:hover {
+  transition: background 0.3s;
+  background-color: #d22bf0;
+}
+
+.data {
+  text-align: center;
+}
+
+h2 {
+  color: #c44ed9;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+}
+h3 .cripto {
+  color: tomato;
+}
+h3 .moneda {
+  color: lightgreen;
+}
+
+img {
+  width: 130px;
+}
+
+p {
+  font-size: 19px;
+}
+
+@media screen and (max-width: 425px) {
+  .data {
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=base.css.map */
